@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../constants/colors.dart';
 
 class SearchBox extends StatelessWidget {
@@ -10,13 +9,15 @@ class SearchBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(20)),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+      ),
       child: TextField(
         onChanged: onchange,
         decoration: const InputDecoration(
-          contentPadding: EdgeInsets.all(10),
+          contentPadding: EdgeInsets.symmetric(vertical: 10),
           prefixIcon: Padding(
-            padding: EdgeInsets.only(right: 10),
+            padding: EdgeInsets.only(left: 10, right: 10), 
             child: Icon(
               Icons.search,
               color: tdBlackColor,
@@ -24,8 +25,7 @@ class SearchBox extends StatelessWidget {
             ),
           ),
           prefixIconConstraints: BoxConstraints(
-            maxHeight: 20,
-            maxWidth: 24,
+            minWidth: 40, 
           ),
           border: InputBorder.none,
           hintText: "Search",
