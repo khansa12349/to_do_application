@@ -31,15 +31,15 @@ android {
         dev {
             applicationIdSuffix ".dev"
             versionNameSuffix "-dev"
-            resValue "string", "to_dp_application", "MyApp Dev"
+            resValue "string", "to_do_application", "MyApp Dev"
         }
         staging {
             applicationIdSuffix ".staging"
             versionNameSuffix "-staging"
-            resValue "string", "to_dp_application", "MyApp Staging"
+            resValue "string", "to_do_application", "MyApp Staging"
         }
         prod {
-            resValue "string", "to_dp_application", "MyApp"
+            resValue "string", "to_do_application", "MyApp"
         }
     }
     namespace "com.example.flutter_to_do_application"
